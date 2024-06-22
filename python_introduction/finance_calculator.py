@@ -9,4 +9,5 @@ monthly_savings = monthly_income - monthly_expenses
 Projected_savings = monthly_savings * 12 + (monthly_savings * 12 * 0.05)
 
 #Print results
-print(f"Projected savings is {Projected_savings} and user's monthly savings is {monthly_savings}")
+print(f"Projected savings is {Projected_savings}:.2f")
+print(f"user's monthly savings is {monthly_savings}:.2f")
