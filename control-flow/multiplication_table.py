@@ -1,5 +1,5 @@
 # Prompt the user
-number = float(input("Enter a number to see its multiplication table: "))
+number = int(input("Enter a number to see its multiplication table: "))
 X = number
 
 # Generate and Print the Multiplication Table:
