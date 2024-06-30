@@ -25,4 +25,4 @@ else:
     print("Invalid input for time_bound")    
             
 # Provide a Customized Reminder
-print(f"{reminder}")
+print(f"Reminder: {reminder}")
