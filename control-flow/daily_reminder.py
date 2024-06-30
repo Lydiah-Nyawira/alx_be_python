@@ -1,7 +1,7 @@
 # Prompt the user
 Task = input("Describe the task: ")
 Priority = input("Enter the task priority (high, medium, low): ").strip().lower()
-Time_bound = input("Is the task time_bound?yes/no: ").strip().lower()
+Time_Bound = input("Is the task time_bound?yes/no: ").strip().lower()
 
 # Process the Task Based on Priority and Time Sensitivity
 match Priority:
@@ -15,9 +15,9 @@ match Priority:
         print("Invalid priority level entered")
         
 #Check if the task is time bound
-if Time_bound == "yes":
+if Time_Bound == "yes":
     print("This task requires immediate action")
-elif Time_bound == "no":
+elif Time_Bound == "no":
     print("This task does not require immediate action")
 else:
     print("Invalid input for time_bound")    
