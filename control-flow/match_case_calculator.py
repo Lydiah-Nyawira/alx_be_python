@@ -12,9 +12,14 @@ match operation:
     case "*":
         result = num1 * num2
     case "/":
-        result = num1 / num2
+        if num2 != 0:
+            result = num1 / num2
+        else:
+            print(f"Error: Division by zero")
+            result = None
     case _:
-        print("Error")
+        print(f"Error: Invalid operation")
 
 # Print output
-print("The result is [result]")                
+if result is not None:
+    print(f"The result is {result}")                
