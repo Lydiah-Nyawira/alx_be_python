@@ -5,4 +5,4 @@ X = number
 # Generate and Print the Multiplication Table:
 for Y in range (1, 11):
     Z = X * Y
-    print(f"{X} * {Y} = {Z}")
+    print(f"{number} * {Y} = {Z}")
