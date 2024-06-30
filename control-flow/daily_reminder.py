@@ -17,7 +17,7 @@ match priority:
         print("Invalid priority level entered")
         
 #Check if the task is time bound
-if time_bound.lower() == 'yes':
+if time_bound == 'yes':
     reminder += " it requires immediate action"
 elif time_bound == "no":
     reminder += " it does not require immediate action"
