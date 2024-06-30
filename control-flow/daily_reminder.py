@@ -18,9 +18,9 @@ match priority:
         
 #Check if the task is time bound
 if time_bound == 'yes':
-    reminder += " it requires immediate action"
+    reminder += " that requires immediate attention today!"
 elif time_bound == "no":
-    reminder += " it does not require immediate action"
+    reminder += ". Consider completing it when youhave free time."
 else:
     print("Invalid input for time_bound")    
             
