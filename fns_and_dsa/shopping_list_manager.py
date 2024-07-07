@@ -32,13 +32,13 @@ def main():
 
 # Function to add items to the list
 def add_item(shopping_list):
-    item = input("Enter the item you want to add: ") # Prompt user
+    item = input("Enter the item to add: ") # Prompt user
     shopping_list.append(item)
     print(f"{item} added to the shopping list.")
 
 # Function to remove items from the list
 def remove_item(shopping_list):
-    item = input("Enter the item you want to remove: ") #Prompt user
+    item = input("Enter the item to remove: ") #Prompt user
     if item in shopping_list:
         shopping_list.remove(item)
         print(f"{item} removed from the list.")
