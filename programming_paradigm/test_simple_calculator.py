@@ -5,11 +5,12 @@ from simple_calculator import SimpleCalculator
 
 # Define a Test Class:
 
-class test_simple_calculator(unittest.TestCase):
-    def SetUp(self):
+class testSimpleCalculator(unittest.TestCase):
+    def setUp(self):
         """Set up the SimpleCalculator instance before each test."""
         self.calc = SimpleCalculator()
 
+# Write test methods
     def test_addition(self):
         """Test the addition method."""
         self.assertEqual(self.calc.add(2, 3), 5)
@@ -22,17 +23,14 @@ class test_simple_calculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(-1, 1), -2)
         self.assertEqual(self.calc.subtract(0, 0), 0)
     
-    def test_multiplacation(self):
-        """Test the multiplacation method."""
+    def test_multiplication(self):
+        """Test the multiplication method."""
         self.assertEqual(self.calc.multiply(2, 3), 6)
         self.assertEqual(self.calc.multiply(-1, 1), -1)
         self.assertEqual(self.calc.multiply(0, 4), 0)
 
     def test_division(self):
         """Test the division method."""
-        self.assertEqual(self.calc.divide(2, 3), 6)
+        self.assertEqual(self.calc.divide(2, 3), 0.6666666666666666)
         self.assertEqual(self.calc.divide(-1, 1), -1)
-        self.assertEqual(self.calc.multiply(0, 4), None)
-
-if __name__ == '__main__':
-    unittest.main()
+        self.assertEqual(self.calc.multiply(0, 4), 0)
