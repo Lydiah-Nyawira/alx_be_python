@@ -22,21 +22,17 @@ class test_simple_calculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(-1, 1), -2)
         self.assertEqual(self.calc.subtract(0, 0), 0)
     
-    def test_multiply(self):
+    def test_multiplacation(self):
         """Test the multiplacation method."""
         self.assertEqual(self.calc.multiply(2, 3), 6)
         self.assertEqual(self.calc.multiply(-1, 1), -1)
         self.assertEqual(self.calc.multiply(0, 4), 0)
 
-
-    def test_divide(self):
+    def test_division(self):
         """Test the division method."""
         self.assertEqual(self.calc.divide(2, 3), 6)
         self.assertEqual(self.calc.divide(-1, 1), -1)
         self.assertEqual(self.calc.multiply(0, 4), None)
 
 if __name__ == '__main__':
-    unittest.main()        
-
-    
-# Use Assertions to Verify Results:    
+    unittest.main()
