@@ -5,7 +5,7 @@ class Book:
         self.author = author
 
     def __str__(self):
-        return f"Book: {self.title} by Jane {self.author}"     
+        return f"Book: {self.title} by {self.author}"     
 
 # Derived Class - EBook
 class EBook(Book):
